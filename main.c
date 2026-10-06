@@ -4,6 +4,7 @@
 #include "cassino.h"
 #include "cacaniquel.h"
 #include "roleta.h"
+#include "dados.h"
 
 int main(void){
     srand(time(NULL));
@@ -15,7 +16,7 @@ int main(void){
         printf("\nQual jogo deseja jogar?\n");
         printf("    1 - Caca-niquel\n");
         printf("    2 - Roleta\n");
-        printf("    3 - Black-Jack\n");
+        printf("    3 - Dados\n");
         printf("    4 - Sair\n");
         printf("Opcao: ");
 
@@ -31,7 +32,7 @@ int main(void){
                         jogarRoleta(&saldo);
                         break;
                     case 3:
-                        printf("Em breve\n");
+                        jogarDados(&saldo);
                         break;
                     default:
                         printf("Opcao invalida!\n");
