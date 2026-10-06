@@ -20,7 +20,7 @@ Projeto sem fins financeiros
           gcc -Wall -Wextra -g3 main.c cassino.c cacaniquel.c roleta.c dados.c -o output\main.exe
    - Linux e macOS
          mkdir output
-         gcc -Wall -Wextra -g3 main.c cassino.c cacaniquel.c roleta.c dados.c -o output\main.exe
+         gcc -Wall -Wextra -g3 main.c cassino.c cacaniquel.c roleta.c dados.c -o output/main.exe
 
 4. Executar
    - Windows
