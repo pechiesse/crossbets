@@ -1,6 +1,6 @@
 Crossbet
 ps 2026.2 crossbots - Programacao
-Proje sem fins financeiros
+Projeto sem fins financeiros
 
 
 1. Pre-requisitos:
