@@ -4,8 +4,8 @@
 #include "cacaniquel.h"
 
 typedef struct {
-    int tipo;   // 0=voltar, 1=numero, 2=cor, 3=par/impar, 4=duzia, -1=invalido
-    int valor;  // numero (0-36) | cor: 1=vermelho 0=preto | paridade: 1=par 0=impar | duzia (1-3)
+    int tipo;   
+    int valor;  
 } Aposta;
 
 static void limparBuffer(void){
@@ -117,7 +117,7 @@ Aposta escolhaUser(void){
     return aposta;
 }
 
-// Devolve 1 se a aposta ganhou, 0 se perdeu
+
 int verificarAposta(Aposta a, int sorteado){
     switch (a.tipo){
     case 1: return a.valor == sorteado;
@@ -138,12 +138,12 @@ void jogarRoleta(double *saldo){
 
     Aposta aposta;
 
-            // repete o menu ate o usuario fazer uma escolha valida
+
     do{
             aposta = escolhaUser();
         } while (aposta.tipo == -1);
         
-    if (aposta.tipo == 0) return;   // escolheu "Sair"   
+    if (aposta.tipo == 0) return;     
 
     double valorAposta = lerAposta(*saldo);
 
